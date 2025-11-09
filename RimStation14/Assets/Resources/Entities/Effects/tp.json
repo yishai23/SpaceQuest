@@ -1,0 +1,16 @@
+{
+  "id": "Teleport",
+  "name": "Teleport",
+  "rootPath": "Sprites/Effects/bluespace_lifeline.rsi/",
+  "arguments": {
+  },
+  "limb": {
+    "name": "main",
+    "components": [
+              {
+                 "type": "AnimationSprite",
+                "properties": { "Sprite": "bluespace_lifeline" , "Sort": "5","DestroyOnStop": "true"   }
+              }
+    ]
+  }
+}

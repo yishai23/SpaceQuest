@@ -1,0 +1,22 @@
+{
+  "id": "steelfloor",
+  "name": "Steel floor",
+  "rootPath": "Sprites/Objects/Tiles/", 
+  "limb": {
+    "name": "Steel floor",
+    "components": [
+      {
+        "type": "DirectionalSprite",
+        "properties": { "Sprite": "plating", "Sort": "-5" }
+      },
+      {
+          "type": "BoxCollider2D",
+          "properties": { "isTrigger": "true" }
+      },
+      {
+         "type": "BasePlate",
+         "properties": { "Built": "true" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "crowbar",
+  "name": "Crowbar",
+  "rootPath": "Sprites/Items/crowbar.rsi/", 
+  "limb": {
+    "name": "Crowbar",
+    "components": [
+      {
+        "type": "DirectionalSprite",
+        "properties": { "Sprite": "storage" }
+      },
+      { "type": "Tool" },
+      { "type": "Grabbable" },
+      { "type": "Item" }
+    ]
+  }
+}

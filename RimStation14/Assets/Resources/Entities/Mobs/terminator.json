@@ -1,0 +1,146 @@
+{
+  "id": "Terminator",
+  "name": "Terminator",
+  "rootPath": "Sprites/Mobs/Terminator/parts.rsi/",
+  "arguments": {
+    "gender": "m"
+  },
+  "limb": {
+    "name": "Torso",
+    "components": [
+      {
+        "type": "DirectionalSprite",
+        "properties": { "Sprite": "chest_{gender}" }
+      },
+      {
+        "type": "Health",
+        "properties": { "maxHealth": "100" }
+      }
+    ],
+    "children": [
+      {
+        "name": "Groin",
+        "components": [
+          {
+            "type": "DirectionalSprite",
+            "properties": { "Sprite": "groin_{gender}" }
+          },
+          { "type": "ArmorSlot" }
+        ],
+        "children": [
+          {
+            "name": "Left Leg",
+            "components": [
+              {
+                "type": "DirectionalSprite",
+                "properties": { "Sprite": "l_leg" }
+              },
+              { "type": "Limb" },
+              {
+                "type": "Movement",
+                "properties": { "Speed": "0.5" }
+              }
+            ],
+            "children": [
+              {
+                "name": "Left Foot",
+                "components": [
+                  {
+                    "type": "DirectionalSprite",
+                    "properties": { "Sprite": "l_foot" }
+                  },
+                  { "type": "Limb" }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Right Leg",
+            "components": [
+              {
+                "type": "DirectionalSprite",
+                "properties": { "Sprite": "r_leg", "Sort": 1}
+              },
+              { "type": "Limb" },
+              {
+                "type": "Movement",
+                "properties": { "Speed": "0.5" }
+              }
+            ],
+            "children": [
+              {
+                "name": "Right Foot",
+                "components": [
+                  {
+                    "type": "DirectionalSprite",
+                    "properties": { "Sprite": "r_foot" }
+                  },
+                  { "type": "Limb" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Head",
+        "components": [
+          {
+            "type": "DirectionalSprite",
+            "properties": { "Sprite": "head_{gender}" }
+          },
+          { "type": "Brain" },
+          { "type": "Speech" }
+        ]
+      },
+      {
+        "name": "Left Arm",
+        "components": [
+          {
+            "type": "DirectionalSprite",
+            "properties": { "Sprite": "l_arm" }
+          },
+          { "type": "Limb" },
+          { "type": "Grabbable" }
+        ],
+        "children": [
+          {
+            "name": "Left Hand",
+            "components": [
+              {
+                "type": "DirectionalSprite",
+                "properties": { "Sprite": "l_hand" }
+              },
+              { "type": "Limb" },
+              { "type": "ItemHolder" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Right Arm",
+        "components": [
+          {
+            "type": "DirectionalSprite",
+            "properties": { "Sprite": "r_arm" }
+          },
+          { "type": "Limb" },
+          { "type": "Grabbable" }
+        ],
+        "children": [
+          {
+            "name": "Right Hand",
+            "components": [
+              {
+                "type": "DirectionalSprite",
+                "properties": { "Sprite": "r_hand" }
+              },
+              { "type": "Limb" },
+              { "type": "ItemHolder" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "steelwall",
+  "name": "Steel Wall",
+  "rootPath": "Sprites/Objects/Walls/solid.rsi/", 
+  "limb": {
+    "name": "Steel Wall",
+    "components": [
+      {
+        "type": "DirectionalSprite",
+        "properties": { "Sprite": "full" , "Sort": "1" }
+      },
+      {
+          "type": "Building",
+         "properties": { "Built": "true" }
+      }
+    ]
+  }
+}

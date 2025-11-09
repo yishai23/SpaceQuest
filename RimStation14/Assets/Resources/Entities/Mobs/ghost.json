@@ -1,0 +1,25 @@
+{
+  "id": "ghost",
+  "name": "ghost",
+  "rootPath": "Sprites/Mobs/ghost/ghost_human.rsi/",
+  "arguments": {
+  },
+  "limb": {
+    "name": "main",
+    "components": [
+    
+              {
+                "type": "DirectionalSprite",
+                "properties": { "Sprite": "animated" , "Sort": "5"}
+              },
+              { "type": "Brain" },
+              {
+                "type": "Movement",
+                "properties": { "Speed": "5" }
+              },
+              {
+                 "type": "ghost"
+              }
+    ]
+  }
+}
