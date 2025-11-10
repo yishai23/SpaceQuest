@@ -1,0 +1,98 @@
+{
+  "limb": {
+    "name": "Torso",
+    "components": [
+      { "type": "SpriteScript", "properties": { "Sprite": "chest_{gender}", "SpriteType": "directional" } },
+      { "type": "Health", "properties": { "maxHealth": "100" } }
+    ],
+    "children": [
+      {
+        "name": "Groin",
+        "components": [
+          { "type": "SpriteScript", "properties": { "Sprite": "groin_{gender}", "SpriteType": "directional" } },
+          { "type": "ArmorSlot" }
+        ],
+        "children": [
+          {
+            "name": "Left Leg",
+            "components": [
+              { "type": "SpriteScript", "properties": { "Sprite": "l_leg", "SpriteType": "directional" } },
+              { "type": "Limb" },
+              { "type": "Movement", "properties": { "Speed": "0.5" } }
+            ],
+            "children": [
+              {
+                "name": "Left Foot",
+                "components": [
+                  { "type": "SpriteScript", "properties": { "Sprite": "l_foot", "SpriteType": "directional" } },
+                  { "type": "Limb" }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Right Leg",
+            "components": [
+              { "type": "SpriteScript", "properties": { "Sprite": "r_leg", "SpriteType": "directional" } },
+              { "type": "Limb" },
+              { "type": "Movement", "properties": { "Speed": "0.5" } }
+            ],
+            "children": [
+              {
+                "name": "Right Foot",
+                "components": [
+                  { "type": "SpriteScript", "properties": { "Sprite": "r_foot", "SpriteType": "directional" } },
+                  { "type": "Limb" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Head",
+        "components": [
+          { "type": "SpriteScript", "properties": { "Sprite": "head_{gender}", "SpriteType": "directional" } },
+          { "type": "Brain" },
+          { "type": "Speech" }
+        ]
+      },
+      {
+        "name": "Left Arm",
+        "components": [
+          { "type": "SpriteScript", "properties": { "Sprite": "l_arm", "SpriteType": "directional" } },
+          { "type": "Limb" },
+          { "type": "Grabbable" }
+        ],
+        "children": [
+          {
+            "name": "Left Hand",
+            "components": [
+              { "type": "SpriteScript", "properties": { "Sprite": "l_hand", "SpriteType": "directional" } },
+              { "type": "Limb" },
+              { "type": "ItemHolder" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Right Arm",
+        "components": [
+          { "type": "SpriteScript", "properties": { "Sprite": "r_arm", "SpriteType": "directional" } },
+          { "type": "Limb" },
+          { "type": "Grabbable" }
+        ],
+        "children": [
+          {
+            "name": "Right Hand",
+            "components": [
+              { "type": "SpriteScript", "properties": { "Sprite": "r_hand", "SpriteType": "directional" } },
+              { "type": "Limb" },
+              { "type": "ItemHolder" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

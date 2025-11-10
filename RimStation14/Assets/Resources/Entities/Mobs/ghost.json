@@ -9,7 +9,7 @@
     "components": [
     
               {
-                "type": "DirectionalSprite",
+                "type": "SpriteScript",
                 "properties": { "Sprite": "animated" , "Sort": "5"}
               },
               { "type": "Brain" },

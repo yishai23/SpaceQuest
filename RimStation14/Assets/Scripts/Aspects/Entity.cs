@@ -14,16 +14,27 @@ public class Entity : MonoBehaviour
     public float MovementSpeed;
     public float Health;
 
-    private void Update()
+    public void SetDirection(int dir)
     {
-        float movsped = 0;
+        Direction = dir;
 
         foreach (var component in components)
         {
-            if (component is DirectionalSprite)
+            if (component is SpriteScript)
             {
-                component.GetComponent<DirectionalSprite>().UpdateSprite(Direction);
+                if (component.GetComponent<SpriteScript>().SpriteType == "directional")
+                {
+                    component.GetComponent<SpriteScript>().SetFrame(Direction);
+                }
             }
+        }
+    }
+
+    public void UpdateStats()
+    {
+        float movsped = 0;
+        foreach (var component in components)
+        {
 
             if (component is Movement)
             {
@@ -32,14 +43,19 @@ public class Entity : MonoBehaviour
 
 
         }
-
-
         MovementSpeed = movsped;
+
+    }
+
+
+    private void Update()
+    {
 
     }
     private void Start()
     {
         FindComps();
+        UpdateStats();
     }
 
     public void FindComps()

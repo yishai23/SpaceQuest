@@ -1,0 +1,18 @@
+{
+  "id": "ghost",
+  "name": "ghost",
+  "rootPath": "Sprites/Mobs/dragon/dragon.rsi/",
+  "arguments": {
+  },
+  "limb": {
+    "name": "main",
+    "components": [
+    
+              {
+                "type": "SpriteScript",
+                "properties": { "Sprite": "alive" , "Sort": "5", "Loop": "true" ,"SpriteType": "animated" }
+              }
+    ]
+  }
+  
+}

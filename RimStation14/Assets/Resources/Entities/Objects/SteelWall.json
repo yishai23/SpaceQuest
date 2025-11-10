@@ -6,7 +6,7 @@
     "name": "Steel Wall",
     "components": [
       {
-        "type": "DirectionalSprite",
+        "type": "SpriteScript",
         "properties": { "Sprite": "full" , "Sort": "1" }
       },
       {

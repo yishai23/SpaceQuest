@@ -6,8 +6,8 @@
     "name": "Steel floor",
     "components": [
       {
-        "type": "DirectionalSprite",
-        "properties": { "Sprite": "plating", "Sort": "-5" }
+        "type": "SpriteScript",
+        "properties": { "Sprite": "plating", "Sort": "-5","SpriteType": "directional" }
       },
       {
           "type": "BoxCollider2D",

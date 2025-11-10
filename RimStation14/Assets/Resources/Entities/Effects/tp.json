@@ -8,8 +8,8 @@
     "name": "main",
     "components": [
               {
-                 "type": "AnimationSprite",
-                "properties": { "Sprite": "bluespace_lifeline" , "Sort": "5","DestroyOnStop": "true"   }
+                 "type": "SpriteScript",
+                "properties": { "Sprite": "bluespace_lifeline" , "Sort": "5","DestroyOnStop": "true"   ,"SpriteType": "animated" }
               }
     ]
   }
